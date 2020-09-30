@@ -95,7 +95,6 @@ a:focus {
 
 .image-container {
   border: 1px solid var(--secondary-color);
-  /* display: inline-block; */
   border-radius: 10px;
   padding: 10px 20px;
   margin-right: 25px;
