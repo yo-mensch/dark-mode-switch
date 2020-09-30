@@ -48,7 +48,7 @@ section {
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 100px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -61,7 +61,8 @@ h2 {
 nav {
   z-index: 10;
   position: fixed;
-  font-family: 'Antic Slab', serif;
+  /* font-family: 'Antic Slab', serif; */
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
   padding: 25px;
@@ -81,6 +82,7 @@ a:hover,
 a:focus {
   color: var(--on-background);
   border-bottom: 3px solid;
+  text-decoration: none;
 }
 
 /* Home Section */
@@ -101,6 +103,7 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  text-align: center;
 }
 
 img {
@@ -177,7 +180,7 @@ p {
 /* Contact Section */
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin: 25px;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -193,7 +196,7 @@ p {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 20px;
 }
 
 .theme-switch-wrapper span {
