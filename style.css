@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
 /* color variables???? */
 :root {
@@ -28,6 +30,8 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   color: var(--on-background);
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%2349bdc9' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E");
@@ -42,11 +46,13 @@ section {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 100px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 32px;
   font-weight: normal;
 }
@@ -55,7 +61,9 @@ h2 {
 nav {
   z-index: 10;
   position: fixed;
-  font-size: 24px;
+  /* font-family: 'Antic Slab', serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
@@ -74,6 +82,7 @@ a:hover,
 a:focus {
   color: var(--on-background);
   border-bottom: 3px solid;
+  text-decoration: none;
 }
 
 /* Home Section */
@@ -94,6 +103,7 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  text-align: center;
 }
 
 img {
@@ -170,7 +180,7 @@ p {
 /* Contact Section */
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin: 25px;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -186,7 +196,7 @@ p {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 20px;
 }
 
 .theme-switch-wrapper span {
