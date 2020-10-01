@@ -18,7 +18,11 @@ function switchTheme(event){
     }
 }
 
-//prideti funkcija nuotrauku toggle'inimui kad isvengti pasikartojimo
+function imageToggle(color){
+    img1.setAttribute('src', `img/undraw_web_developer_p3e5_${color}.svg`);
+    img2.setAttribute('src', `img/undraw_composition_oskp_${color}.svg`);
+    img3.setAttribute('src', `img/undraw_Freelancer_re_irh4_${color}.svg`);
+}
 
 function darkMode(){
     nav.style.backgroundColor = 'rgb(0 0 0 /50%)';
@@ -26,9 +30,7 @@ function darkMode(){
     toggleIcon.children[0].textContent = 'Dark Mode';
     toggleIcon.children[1].classList.remove('fa-sun');
     toggleIcon.children[1].classList.add('fa-moon');
-    img1.setAttribute('src', 'img/undraw_web_developer_p3e5_dark.svg');
-    img2.setAttribute('src', 'img/undraw_composition_oskp_dark.svg');
-    img3.setAttribute('src', 'img/undraw_Freelancer_re_irh4_dark.svg');
+    imageToggle('dark');
 }
 
 function lightMode(){
@@ -37,9 +39,7 @@ function lightMode(){
     toggleIcon.children[1].classList.remove('fa-moon');
     toggleIcon.children[1].classList.add('fa-sun');
     textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    img1.setAttribute('src','img/undraw_web_developer_p3e5_light.svg');
-    img2.setAttribute('src', 'img/undraw_composition_oskp_light.svg');
-    img3.setAttribute('src', 'img/undraw_Freelancer_re_irh4_light.svg');
+    imageToggle('light');
 }
 
 toggleSwitch.addEventListener('change', switchTheme);

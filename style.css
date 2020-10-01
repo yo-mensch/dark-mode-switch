@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap&family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
 /* color variables???? */
 :root {
@@ -60,7 +59,6 @@ h2 {
 nav {
   z-index: 10;
   position: fixed;
-  /* font-family: 'Antic Slab', serif; */
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
@@ -70,7 +68,7 @@ nav {
 }
 
 a {
-  margin-right: 25px;
+  margin: 25px;
   color: var(--primary-color);
   text-decoration: none;
   border-bottom: 3px solid transparent;
